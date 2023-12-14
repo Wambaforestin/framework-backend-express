@@ -1,0 +1,11 @@
+<!-- creating a the questions.ejs file for the questions -->
+<%- include('header') -%>
+
+<p>Mes questions disponibles</p>
+<ul>
+    <% for (let question of questions) { %>
+    <li><%= question.name %> (<%= question.answer %>) : <%= question.nbpoints %> points</li>
+    <% } %>
+</ul>
+
+<%- include('footer') -%>

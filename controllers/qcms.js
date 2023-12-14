@@ -1,4 +1,5 @@
 const {qcms, addQcm} = require('../models/inmemory');
+// const qcms = require('../models/inmemory').qcms;
 
 const displayQcms = (req, res) => {
     for (let qcm of qcms) {
